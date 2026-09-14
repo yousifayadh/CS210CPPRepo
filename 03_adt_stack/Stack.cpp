@@ -8,24 +8,83 @@
 
 #include "Stack.h"
 
+#include <iostream>
+#include <ostream>
+#include <stack>
+
+Stack::Stack()
+{
+    topIndex = -1;
+    data[100];
+
+}
+
 void Stack::push(int value) {
     // TODO: add value to the top of data_ (vector has a method for this)
+    if (topIndex < 99)
+    {
+        topIndex++;
+        data[topIndex] = value;
+    }
+    else {
+        std::cout<<"Can't add to a full stack"<<std::endl;
+    }
+
 }
 
-void Stack::pop() {
+int Stack::pop() {
     // TODO: if data_ isn't empty, remove the top element
+    if (topIndex != -1) {
+        int value = data[topIndex];
+        topIndex--;
+        return value;
+
+    }
+    else
+    {
+        std::cout<<"Stack is empty, can't remove from it"<<std::endl;
+        return 0;
+    }
 }
 
-int Stack::top() const {
+/*
+int Stack::peek() const
+{
     // TODO: return the top element of data_
     // undefined if empty -- callers should check isEmpty() first. We'll
     // harden this kind of thing later in the course.
-}
 
-bool Stack::isEmpty() const {
+}
+*/
+
+
+bool Stack::isEmpty() const
+{
     // TODO: return whether data_ has zero elements
+    if (topIndex <= -1) {
+        return true;
+    }
+    else {
+        return false;
+    }
+
+}
+bool Stack::isFull() const
+{
+    if (topIndex >= 99)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
 }
 
-int Stack::size() const {
+
+int Stack::size() const
+{
     // TODO: return how many elements are in data_ (cast to int)
+    return topIndex + 1;
 }
+
