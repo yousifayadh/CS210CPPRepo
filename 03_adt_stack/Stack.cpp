@@ -27,7 +27,8 @@ void Stack::push(int value) {
         data[topIndex] = value;
     }
     else {
-        std::cout<<"Can't add to a full stack"<<std::endl;
+        std::cout<<"Can't add to a full stack. The following -1 is solely to indicate that"<<std::endl;
+        std::cout<<"-1"<<std::endl;
     }
 
 }
@@ -42,20 +43,27 @@ int Stack::pop() {
     }
     else
     {
-        std::cout<<"Stack is empty, can't remove from it"<<std::endl;
-        return 0;
+        std::cout<<"Stack is empty, can't remove from it. The following -1 is solely to indicate that"<<std::endl;
+        return -1;
     }
 }
 
-/*
+
 int Stack::peek() const
 {
     // TODO: return the top element of data_
     // undefined if empty -- callers should check isEmpty() first. We'll
     // harden this kind of thing later in the course.
+    if (topIndex != -1) {
+        return data[topIndex];
+    }
+    else {
+        std::cout<<"Stack is empty, can't peek. The following -1 is solely to indicate that"<<std::endl;
+        return -1;
+    }
 
 }
-*/
+
 
 
 bool Stack::isEmpty() const

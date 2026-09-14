@@ -10,21 +10,123 @@
 int main() {
     Stack s;
 
-    std::cout<< s.isEmpty() << std::endl;
+    std::cout<<"Stack is empty"<<std::endl;
+    std::cout<< "Is Empty: " <<(s.isEmpty() ? "yes" : "no") << std::endl;
+    std::cout<< s.pop()<<std::endl;
+    std::cout<< s.peek() << std::endl;
     s.push(10);
     s.push(20);
     s.push(30);
-    s.pop();
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    s.push(10);
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    s.push(10);
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    s.push(10);
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    s.push(10);
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    s.push(10);
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    s.push(10);
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    s.push(10);
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    s.push(10);
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    s.push(10);
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    s.push(10);
+    std::cout<<"full"<<std::endl;
+    s.push(1000);
+
+
 
 
     std::cout << "Stack size: " << s.size() << std::endl;
-    /*
+
      std::cout << "Top: " << s.peek() << std::endl;
 
     s.pop();
     std::cout << "After pop, top: " << s.peek() << std::endl;
     std::cout << "Is empty? " << (s.isEmpty() ? "yes" : "no") << std::endl;
-*/
 
 
     return 0;
