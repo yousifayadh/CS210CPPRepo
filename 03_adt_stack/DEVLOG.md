@@ -5,4 +5,7 @@ I have been working on getting the general format for how the stack will work do
 
 
 ## September 14th, 2026 at 1:51 pm
-I updated the ERRORLOG with another error I recently got due to accidentally forgetting a colon in the code for printing, and updated the DEVLOG with this . I made the peek function functional and also altered the way the pushing to a full array/stack and the popping from/ peeking into an empty array/stack so that it now explicity states that the value returned is only to indicate the error. Finally, I tested the code by peeking and popping from the empty array/stack, then adding 100 elements and trying to push another one in. All 3 cases correctly displayed error messages.
+I updated the ERRORLOG with another error I recently got due to accidentally forgetting a colon in the code for printing, and updated the DEVLOG with this . I made the peek function functional and also altered the way the pushing to a full array/stack and the popping from/ peeking into an empty array/stack so that it now explicitly states that the value returned is only to indicate the error. Finally, I tested the code by peeking and popping from the empty array/stack, then adding 100 elements and trying to push another one in. All 3 cases correctly displayed error messages.
+
+## September 14th, 2026 at 9:21 pm
+I updated the DEVLOG with this entry. I also added more test cases to main (pushing a value to the empty stack, then popping it, then peeking to see if it gives me an error (it did)) and also changed the wording of the "error messages" (now it uses the word push instead of add). Finally, I created the A2README.md file and answered the questions on there.

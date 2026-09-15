@@ -12,8 +12,13 @@ int main() {
 
     std::cout<<"Stack is empty"<<std::endl;
     std::cout<< "Is Empty: " <<(s.isEmpty() ? "yes" : "no") << std::endl;
-    std::cout<< s.pop()<<std::endl;
-    std::cout<< s.peek() << std::endl;
+    s.pop();
+    s.peek();
+    s.push (10);
+    std::cout<<"Current Size: " << s.size()<< std::endl;
+    s.pop();
+    std::cout<<"This prints after it's popped. Now peeking into empty list"<< std::endl;
+    s.peek();
     s.push(10);
     s.push(20);
     s.push(30);
@@ -113,6 +118,7 @@ int main() {
     s.push(10);
     s.push(20);
     s.push(30);
+    std::cout<<"Size: " << s.size() << std::endl;
     s.push(10);
     std::cout<<"full"<<std::endl;
     s.push(1000);

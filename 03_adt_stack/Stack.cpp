@@ -27,7 +27,7 @@ void Stack::push(int value) {
         data[topIndex] = value;
     }
     else {
-        std::cout<<"Can't add to a full stack. The following -1 is solely to indicate that"<<std::endl;
+        std::cout<<"Can't push to a full stack. The following -1 is solely to indicate that"<<std::endl;
         std::cout<<"-1"<<std::endl;
     }
 
@@ -43,7 +43,7 @@ int Stack::pop() {
     }
     else
     {
-        std::cout<<"Stack is empty, can't remove from it. The following -1 is solely to indicate that"<<std::endl;
+        std::cout<<"Stack is empty, can't pop. The following -1 is solely to indicate that"<<std::endl;
         return -1;
     }
 }
